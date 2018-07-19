@@ -162,7 +162,7 @@ describe("QueryBuilder", () => {
         expect(title.text()).toBe("New question");
       });
 
-      it("works for Count of rows aggregation and FK State breakout", async () => {
+      xit("works for Count of rows aggregation and FK State breakout", async () => {
         const { store, qb } = await initQbWithOrdersTable();
         await store.dispatch(
           setDatasetQuery({
