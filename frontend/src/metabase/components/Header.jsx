@@ -160,7 +160,10 @@ export default class Header extends Component {
             {titleAndDescription}
             {attribution}
             {!this.props.isEditingInfo && (
-              <CollectionBadge collectionId={item.collection_id} />
+              <CollectionBadge
+                collectionId={item.collection_id}
+                analyticsContext={this.props.analyticsContext}
+              />
             )}
           </div>
 
